@@ -11,8 +11,6 @@ var psa = new PSA({
     'language': 'fr_FR'
 });
 
-console.log(JSON.stringify(psa.client_id));
-
 var vehicle = {
     'vin': '123456',
     'contract': 'ABCDEF',
