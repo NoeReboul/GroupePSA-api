@@ -1,6 +1,8 @@
 Groupe PSA nodeJS lib
 =====================
 
+[![Build Status](https://travis-ci.org/NoeReboul/GroupePSA-api.svg?branch=master)](https://travis-ci.org/NoeReboul/GroupePSA-api)
+
 A small nodeJS library of the PSA Group API
 
 ## Installation
