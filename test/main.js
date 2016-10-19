@@ -6,12 +6,12 @@ chai.use(require('chai-json-schema'));
 var PSA = require('../lib/GroupePSAConnectedCar');
 
 var psa = new PSA({
-    'client_id': 'CLIENT_IDCLIENT_IDCLIENT_IDCLIENT_ID',
+    'client_id': process.env.CLIENT_ID,
     'name': "myFirstApp",
     'language': 'fr_FR'
 });
 
-psa.client_id = process.env.CLIENT_ID;
+console.log(JSON.stringify(psa.client_id));
 
 var vehicle = {
     'vin': '123456',
