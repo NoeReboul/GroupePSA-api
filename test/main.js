@@ -11,6 +11,8 @@ var psa = new PSA({
     'language': 'fr_FR'
 });
 
+psa.client_id = process.env.CLIENT_ID;
+
 var vehicle = {
     'vin': '123456',
     'contract': 'ABCDEF',
