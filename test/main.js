@@ -4893,13 +4893,14 @@ var vehicle_schema = {
 describe('Crash', function() {
 	this.timeout(150000);		
     it('getLast() response should match the schema', function(done) {
-        psa.crash.getLast(vehicle, '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18', function(err, res) {
+        psa.crash.getLast(vehicle, list_of_seconds, function(err, res) {
             should.not.exist(err);
             res.should.be.jsonSchema(crash_schema);
             done();
         });
 
     });
+    /*
     it('searchByDate() response should match the schema', function(done) {
         psa.crash.searchByDate(vehicle, yesterday, today, 1, function(err, res) {
             should.not.exist(err);
@@ -4908,6 +4909,7 @@ describe('Crash', function() {
         });
 
     });
+    */
 });
 
 describe('Ecodriving', function() {
