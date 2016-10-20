@@ -1,6 +1,6 @@
 {
   "name": "GroupePSAConnectedCar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A NodeJS wrapper for PSA Group Connected Vehicles API",
   "main": "lib/GroupePSAConnectedCar.js",
   "scripts": {

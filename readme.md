@@ -22,7 +22,7 @@ A small nodeJS library of the PSA Group API
 	psa.setVehicle({
 		'vin' : '123456',
 		'contract': 'ABCDEF',
-		'brand': 'c'
+		'brand': 'C'
 	});
 
 	psa.environment.get('1,2,3,4,5,6,7,8,9,10,11,12', function(err,res){
