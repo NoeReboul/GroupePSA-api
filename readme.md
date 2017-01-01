@@ -19,13 +19,13 @@ A small nodeJS library of the PSA Group API
 		'language': 'fr_FR'
 	});
 
-	psa.setVehicle({
+	var vehicle = {
 		'vin' : '123456',
 		'contract': 'ABCDEF',
 		'brand': 'C'
-	});
+	};
 
-	psa.environment.get('1,2,3,4,5,6,7,8,9,10,11,12', function(err,res){
+	psa.environment.get(vehicle, '1,2,3,4,5,6,7,8,9,10,11,12', function(err,res){
 		if (!err) {
 			console.log(res);
 		}
